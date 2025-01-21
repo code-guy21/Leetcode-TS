@@ -122,7 +122,8 @@ git checkout -b feature/new-solution
 
 ### Arrays
 
-- [Two Sum](src/arrays/twoSum) - Easy
+- [Two Sum](src/tests/arrays/twoSum) - Easy
+- [Group Anagrams](src/tests/arrays/twoSum) - Medium
 
 ## 🛠️ Tech Stack
 
