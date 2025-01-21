@@ -64,7 +64,7 @@ npm test
 Run specific problem tests:
 
 ```bash
-npm test src/arrays/twoSum
+npm test src/tests/arrays/twoSum
 ```
 
 Generate coverage report:

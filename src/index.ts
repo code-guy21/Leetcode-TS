@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const getCategories = (): { name: string; value: string }[] => {
-	const srcPath = path.join(__dirname, '../src');
+	const srcPath = path.join(__dirname, '../src/tests');
 	try {
 		const files = fs
 			.readdirSync(srcPath, { withFileTypes: true })
@@ -33,7 +33,7 @@ const getCategories = (): { name: string; value: string }[] => {
 const getTestOptions = (
 	category: string
 ): { name: string; value: string }[] => {
-	const categoryPath = path.join(__dirname, '../src', category);
+	const categoryPath = path.join(__dirname, '../src/tests', category);
 	try {
 		const files = fs
 			.readdirSync(categoryPath, { withFileTypes: true })
@@ -121,7 +121,7 @@ const runTests = (category: string, option: string) => {
 		[
 			'jest',
 			'--verbose',
-			`src/${category === 'all' ? '' : category}${
+			`src/tests/${category === 'all' ? '' : category}${
 				option === 'all' ? '' : `/${option}`
 			}`,
 		],

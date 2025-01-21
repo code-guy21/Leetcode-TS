@@ -1,5 +1,5 @@
 import { twoSum } from './index';
-import { TestCase } from '../../utils/types';
+import { TestCase } from '../../../utils/types';
 
 const testCases: TestCase<{ nums: number[]; target: number }, number[]>[] = [
 	{
