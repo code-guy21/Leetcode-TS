@@ -1,36 +1,59 @@
 # LeetCode TypeScript Solutions
 
-A collection of LeetCode problems solved using TypeScript with full test coverage and an interactive CLI test runner.
+A collection of LeetCode problems solved using TypeScript, featuring:
 
-## Setup
+- 💡 Detailed explanations and approach breakdowns
+- ✅ Comprehensive test coverage
+- 🛠️ Interactive CLI test runner
+- 📝 TypeScript best practices
+
+## 📚 Contents
+
+- [Setup](#setup)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [Problem Solutions](#problem-solutions)
+
+## 🚀 Setup
 
 1. Clone the repository
-2. Install dependencies:
+
+```bash
+git clone https://github.com/code-guy21/Leetcode-TS.git
+cd Leetcode-TS
+```
+
+2. Install dependencies
 
 ```bash
 npm install
 ```
 
-## Running Tests
+3. Verify setup
 
-You can run tests in two ways:
+```bash
+npm test
+```
+
+## 💻 Usage
 
 ### Interactive CLI
 
-Run the interactive test runner:
+The custom CLI provides an intuitive interface for running tests:
 
 ```bash
 npm start
 ```
 
-This will launch an interactive CLI that allows you to:
+Features:
 
-- Select problem categories
-- Run specific problem tests
-- Run all tests in a category
-- Run all tests in the project
+- 📂 Browse problems by category
+- 🧪 Run specific problem tests
+- 📊 View test coverage
 
-### Command Line
+### Command Line Options
 
 Run all tests:
 
@@ -38,21 +61,85 @@ Run all tests:
 npm test
 ```
 
-Run tests with coverage:
+Run specific problem tests:
+
+```bash
+npm test src/arrays/twoSum
+```
+
+Generate coverage report:
 
 ```bash
 npm test -- --coverage
 ```
 
-## Project Configuration
+Watch mode:
 
-- **TypeScript**: Configured with strict type checking and modern ES2020 features
-- **Jest**: Set up with ts-jest for TypeScript testing support
-- **Interactive CLI**: Built with inquirer for a user-friendly test running experience
-- **Test Structure**: Each solution includes:
-  - Implementation file (`index.ts`)
-  - Test file (`index.test.ts`) with multiple test cases
+```bash
+npm run test:watch
+```
 
-## License
+## 📁 Project Structure
+
+```
+src/
+├── arrays/
+│   ├── two-sum/
+│   │   ├── index.ts         # Solution implementation
+│   │   ├── index.test.ts    # Tests
+│   │   └── README.md        # Problem explanation
+│   └── ...
+├── strings/
+├── linked-lists/
+└── ...
+```
+
+Each problem solution includes:
+
+- Detailed explanation of the approach
+- Time and space complexity analysis
+- Test cases covering edge cases
+- TypeScript implementation
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch
+
+```bash
+git checkout -b feature/new-solution
+```
+
+3. Implement your solution following our template:
+   - Add solution in `src/category/problem-name/index.ts`
+   - Add tests in `src/category/problem-name/index.test.ts`
+   - Add README.md with explanation
+4. Commit your changes
+5. Push to the branch
+6. Create a Pull Request
+
+## 📖 Problem Solutions
+
+### Arrays
+
+- [Two Sum](src/arrays/twoSum) - Easy
+
+## 🛠️ Tech Stack
+
+- TypeScript 5.x
+- Jest for testing
+
+## 📝 Notes
+
+- Solutions prioritize readability and maintainability
+- TypeScript features are used to enhance code safety
+- Each solution includes performance considerations
+- Regular updates with new problems and improvements
+
+## 📄 License
 
 MIT
+
+---
+
+_Don't forget to star ⭐ this repo if you find it helpful!_
