@@ -124,6 +124,7 @@ git checkout -b feature/new-solution
 
 - [Two Sum](src/tests/arrays/twoSum) - Easy
 - [Group Anagrams](src/tests/arrays/twoSum) - Medium
+- [Contains Duplicate](src/tests/arrays/containsDuplicate) - Easy
 
 ## 🛠️ Tech Stack
 
