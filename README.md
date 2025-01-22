@@ -126,6 +126,10 @@ git checkout -b feature/new-solution
 - [Group Anagrams](src/tests/arrays/twoSum) - Medium
 - [Contains Duplicate](src/tests/arrays/containsDuplicate) - Easy
 
+### Sliding Window
+
+- [Longest Substring Without Repeating Characters ](src/tests/slidingWindow/longestSubstring) - Medium
+
 ## 🛠️ Tech Stack
 
 - TypeScript 5.x

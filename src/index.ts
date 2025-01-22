@@ -74,29 +74,26 @@ const initCli = async () => {
 			},
 		]);
 
-		handleOptions(category);
+		handleCategory(category);
 	} catch (error) {
 		console.log(error);
 		process.exit(1);
 	}
 };
 
-const handleOptions = (category: string) => {
+const handleCategory = (category: string) => {
 	switch (category) {
-		case 'arrays':
-			arrayOptions(category);
-			break;
 		case 'all':
 			runTests('all', 'all');
 			break;
 		case 'exit':
 			process.exit(1);
 		default:
-			process.exit(1);
+			handleOptions(category);
 	}
 };
 
-const arrayOptions = async (category: string) => {
+const handleOptions = async (category: string) => {
 	try {
 		let testOptions = getTestOptions(category);
 		let { option } = await inquirer.prompt([
