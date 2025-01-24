@@ -130,6 +130,7 @@ git checkout -b feature/new-solution
 ### slidingWindow
 
 - [longestSubstring](src/tests/slidingWindow/longestSubstring)
+- [minimumWindowSubstring](src/tests/slidingWindow/minimumWindowSubstring)
 
 
 ## 🛠️ Tech Stack

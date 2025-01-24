@@ -1,24 +1,25 @@
 {
-  "name": "leetcode-ts",
-  "version": "1.0.0",
-  "description": "Leetcode solutions in TypeScript",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "build": "tsc",
-    "start": "npm run build && node dist/index.js",
-    "test:watch": "jest --watch",
-    "test": "jest"
-  },
-  "author": "Alexis San Javier",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/jest": "^29.5.14",
-    "jest": "^29.7.0",
-    "ts-jest": "^29.2.5",
-    "typescript": "^5.7.3"
-  },
-  "dependencies": {
-    "inquirer": "^12.3.2"
-  }
+	"name": "leetcode-ts",
+	"version": "1.0.0",
+	"description": "Leetcode solutions in TypeScript",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"build": "tsc",
+		"start": "npm run build && node dist/index.js",
+		"generate": "npm run build && node dist/utils/generateMarkdown.js",
+		"test:watch": "jest --watch",
+		"test": "jest"
+	},
+	"author": "Alexis San Javier",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/jest": "^29.5.14",
+		"jest": "^29.7.0",
+		"ts-jest": "^29.2.5",
+		"typescript": "^5.7.3"
+	},
+	"dependencies": {
+		"inquirer": "^12.3.2"
+	}
 }
