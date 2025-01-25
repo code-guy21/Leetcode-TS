@@ -1,5 +1,5 @@
 import { containsDuplicate } from './index';
-import { TestCase } from '../../../utils/types';
+import { TestCase } from '../../../types';
 
 const testCases: TestCase<number[], boolean>[] = [
 	{

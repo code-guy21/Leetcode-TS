@@ -152,37 +152,51 @@ _Don't forget to star ⭐ this repo if you find it helpful!_
 	fs.writeFileSync('README.md', markdown);
 };
 
+const camelCaseToUpper = (w: string): string =>
+	w
+		.split(/(?=[A-Z])/)
+		.map(w =>
+			w
+				.split('')
+				.map((c, i) => (i === 0 ? c.toUpperCase() : c))
+				.join('')
+		)
+		.join(' ');
+
 const renderCategories = () => {
 	const srcPath = path.join(__dirname, '../../src/tests');
+
 	const categories = fs
 		.readdirSync(srcPath, { withFileTypes: true })
 		.filter(dirent => dirent.isDirectory())
-		.map(dirent => ({
-			category: dirent.name,
-		}))
-		.map(({ category }) => {
+		.map(({ name: category }) => {
 			const categoryPath = path.join(srcPath, category);
+
 			const files = fs
 				.readdirSync(categoryPath, { withFileTypes: true })
 				.filter(dirent => dirent.isDirectory())
 				.map(dirent => dirent.name);
+
 			return {
 				category,
 				problems: [...files],
 			};
-		})
+		});
+
+	const markdown = categories
 		.map(({ category, problems }) => {
 			let problemTxt = problems
 				.map(p => {
-					return `- [${p}](src/tests/${category}/${p})\n`;
+					return `- [${camelCaseToUpper(p)}](src/tests/${category}/${p})\n`;
 				})
 				.join('');
-			return `\n### ${category}\n
+
+			return `\n### ${camelCaseToUpper(category)}\n
 ${problemTxt}`;
 		})
 		.join('');
 
-	return categories;
+	return markdown;
 };
 
 generateReadme();

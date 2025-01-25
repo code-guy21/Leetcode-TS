@@ -1,5 +1,5 @@
 import { groupAnagrams } from './index';
-import { TestCase } from '../../../utils/types';
+import { TestCase } from '../../../types';
 
 const testCases: TestCase<string[], string[][]>[] = [
 	{

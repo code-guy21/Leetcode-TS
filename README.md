@@ -120,17 +120,17 @@ git checkout -b feature/new-solution
 
 ## 📖 Problem Solutions
 
-### arrays
+### Arrays
 
-- [containsDuplicate](src/tests/arrays/containsDuplicate)
-- [groupAnagrams](src/tests/arrays/groupAnagrams)
-- [twoSum](src/tests/arrays/twoSum)
-- [validAnagram](src/tests/arrays/validAnagram)
+- [Contains Duplicate](src/tests/arrays/containsDuplicate)
+- [Group Anagrams](src/tests/arrays/groupAnagrams)
+- [Two Sum](src/tests/arrays/twoSum)
+- [Valid Anagram](src/tests/arrays/validAnagram)
 
-### slidingWindow
+### Sliding Window
 
-- [longestSubstring](src/tests/slidingWindow/longestSubstring)
-- [minimumWindowSubstring](src/tests/slidingWindow/minimumWindowSubstring)
+- [Longest Substring](src/tests/slidingWindow/longestSubstring)
+- [Minimum Window Substring](src/tests/slidingWindow/minimumWindowSubstring)
 
 
 ## 🛠️ Tech Stack
