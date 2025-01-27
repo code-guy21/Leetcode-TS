@@ -132,6 +132,10 @@ git checkout -b feature/new-solution
 - [Longest Substring](src/tests/slidingWindow/longestSubstring)
 - [Minimum Window Substring](src/tests/slidingWindow/minimumWindowSubstring)
 
+### Trees
+
+- [Maximum Depth Binary Tree](src/tests/trees/maximumDepthBinaryTree)
+
 
 ## 🛠️ Tech Stack
 
