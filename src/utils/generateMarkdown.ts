@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { camelCaseToUpper } from './index.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -151,17 +152,6 @@ _Don't forget to star ⭐ this repo if you find it helpful!_
 `;
 	fs.writeFileSync('README.md', markdown);
 };
-
-const camelCaseToUpper = (w: string): string =>
-	w
-		.split(/(?=[A-Z])/)
-		.map(w =>
-			w
-				.split('')
-				.map((c, i) => (i === 0 ? c.toUpperCase() : c))
-				.join('')
-		)
-		.join(' ');
 
 const renderCategories = () => {
 	const srcPath = path.join(__dirname, '../../src/tests');

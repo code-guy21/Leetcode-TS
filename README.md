@@ -135,6 +135,7 @@ git checkout -b feature/new-solution
 ### Trees
 
 - [Maximum Depth Binary Tree](src/tests/trees/maximumDepthBinaryTree)
+- [Symmetric Tree](src/tests/trees/symmetricTree)
 
 
 ## 🛠️ Tech Stack

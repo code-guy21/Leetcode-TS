@@ -1,31 +1,6 @@
-import { maxDepthBFS, maxDepthDFS, TreeNode } from './index';
-import { TestCase } from '../../../types/';
-
-function createTree(values: (number | null)[]): TreeNode | null {
-	if (!values.length) return null;
-
-	const root = new TreeNode(values[0]!);
-	const queue = [root];
-	let i = 1;
-
-	while (queue.length && i < values.length) {
-		const node = queue.shift()!;
-
-		if (i < values.length && values[i] !== null) {
-			node.left = new TreeNode(values[i]!);
-			queue.push(node.left);
-		}
-		i++;
-
-		if (i < values.length && values[i] !== null) {
-			node.right = new TreeNode(values[i]!);
-			queue.push(node.right);
-		}
-		i++;
-	}
-
-	return root;
-}
+import { maxDepthBFS, maxDepthDFS } from './index';
+import { TestCase, TreeNode } from '../../../types/';
+import { createTree } from '../../../utils';
 
 const testCases: TestCase<{ root: TreeNode | null }, number>[] = [
 	{
