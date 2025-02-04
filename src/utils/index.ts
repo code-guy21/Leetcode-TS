@@ -1,4 +1,4 @@
-import { TreeNode } from '../types/index.js';
+import { TreeNode } from '../types';
 
 export function createTree(values: (number | null)[]): TreeNode | null {
 	if (!values.length) return null;
